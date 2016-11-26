@@ -1,0 +1,26 @@
+{
+    "name": "darrigo/wp-plugin-utils",
+    "description": "An object oriented package to be reused in my Wordpress plugin",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriele D'Arrigo",
+            "email": "darrigo.g@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "Darrigo\\WpPluginUtils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Darrigo\\WpPluginUtils\\Tests\\": "tests/"
+        }
+    }
+}
