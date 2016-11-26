@@ -8,6 +8,7 @@ if (!$_tests_dir) {
     $_tests_dir = '/tmp/wordpress-tests-lib';
 }
 
+require dirname(__DIR__) . '/vendor/autoload.php';
+
 // Start up the WP testing environment.
 require $_tests_dir . '/includes/bootstrap.php';
-require dirname(__DIR__) . '/vendor/autoload.php';

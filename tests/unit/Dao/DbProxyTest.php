@@ -1,5 +1,5 @@
 <?php
-namespace Tests\Darrigo\WpPluginUtils\Repository;
+namespace Tests\Darrigo\WpPluginUtils\Dao;
 
 use PHPUnit\Framework\TestCase;
 use Darrigo\WpPluginUtils\Dao\DbProxy;
