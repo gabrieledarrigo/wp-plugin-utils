@@ -1,7 +1,6 @@
 {
     "name": "darrigo/wp-plugin-utils",
     "description": "An object oriented package to be reused in my WordPress plugin",
-    "version": "1.0.0",
     "type": "library",
     "keywords": ["wordpress", "plugin", "php"],
     "homepage": "https://github.com/gabrieledarrigo/wp-plugin-utils",
