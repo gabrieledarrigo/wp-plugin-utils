@@ -35,4 +35,11 @@ class InstanceTest extends TestCase
         $instance->offsetUnset('name');
         $this->assertNull($instance->offsetGet('name'));
     }
+
+    public function testItOfferArrayUtils()
+    {
+        $instance = new Instance([]);
+        $this->assertTrue($instance->isEmpty([]));
+        $this->assertTrue($instance->isValueSet(['name' => 'abc'], 'name'));
+    }
 }
