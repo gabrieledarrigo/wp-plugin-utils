@@ -1,6 +1,7 @@
 <?php
 namespace Tests\Darrigo\WpPluginUtils\Service;
 
+use Darrigo\WpPluginUtils\Model\Collection;
 use Darrigo\WpPluginUtils\View\View;
 use PHPUnit\Framework\TestCase;
 
@@ -17,14 +18,14 @@ class ViewTest extends TestCase
     protected $templatePath;
 
     /**
-     * @var array
+     * @var Collection
      */
     protected $viewArgs;
 
     public function setUp()
     {
         $this->templatePath = dirname(dirname(dirname(__FILE__))) . '/fixtures/templates/_template.php';
-        $this->viewArgs = ['hello' => 'Hello'];
+        $this->viewArgs = new Collection(['hello' => 'Hello']);
     }
 
     public function testItShouldReturnTemplatePathAndViewArgs()

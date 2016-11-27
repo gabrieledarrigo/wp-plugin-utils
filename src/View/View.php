@@ -1,6 +1,7 @@
 <?php
 
 namespace Darrigo\WpPluginUtils\View;
+use Doctrine\Common\Collections\Collection;
 
 /**
  * Class View
@@ -13,17 +14,11 @@ class View implements Renderer
      */
     protected $templatePath;
 
-    /**
-     * @var array
-     */
-    protected $viewArgs = [];
 
-    /**
-     * ViewRenderer constructor.
-     * @param $templatePath
-     * @param array $viewArgs
-     */
-    public function __construct($templatePath, array $viewArgs)
+    protected $viewArgs;
+
+
+    public function __construct($templatePath, Collection $viewArgs)
     {
         if (file_exists($templatePath) === false) {
             throw new \InvalidArgumentException(self::class . ' cannot found template ' . $templatePath);
@@ -41,9 +36,7 @@ class View implements Renderer
         return $this->templatePath;
     }
 
-    /**
-     * @return array
-     */
+
     public function getViewArgs()
     {
         return $this->viewArgs;
@@ -54,8 +47,8 @@ class View implements Renderer
      */
     public function render()
     {
-        if (!empty($this->viewArgs)) {
-            extract($this->viewArgs);
+        if (!$this->viewArgs->isEmpty()) {
+            extract($this->viewArgs->toArray());
         }
 
         ob_start();
