@@ -9,7 +9,7 @@ use Darrigo\WpPluginUtils\Utils\IsEmpty;
  * @package Darrigo\WpPluginUtils\Model
  * @author Gabriele D'Arrigo - darrigo.g@gmail.com
  */
-final class Instance implements \ArrayAccess, ToArray
+final class Instance implements \ArrayAccess, \Countable, ToArray
 {
     use ArrayCheck, IsEmpty;
 
@@ -60,6 +60,14 @@ final class Instance implements \ArrayAccess, ToArray
     public function offsetUnset($offset)
     {
         $this->instance[$offset] = null;
+    }
+
+    /**
+     * @return int
+     */
+    public function count()
+    {
+        return count($this->instance);
     }
 
     /**

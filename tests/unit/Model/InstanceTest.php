@@ -42,4 +42,10 @@ class InstanceTest extends TestCase
         $this->assertTrue($instance->isEmpty([]));
         $this->assertTrue($instance->isValueSet(['name' => 'abc'], 'name'));
     }
+
+    public function testItIsCountable()
+    {
+        $raw = [1,2,3,4];
+        $this->assertEquals(count($raw), (new Instance($raw))->count());
+    }
 }

@@ -4,9 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1e4a4cdf8e99b6a5958b5671760ee097",
-    "content-hash": "c67080abc9025ea122bd8dd27a5903ca",
-    "packages": [
+    "hash": "3ab93eb403e1d4acec53be23c3f36be0",
+    "content-hash": "41983600eb35bb08223a1e234f357f75",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -640,16 +641,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "45026c8383187ad1dcb14fbfec77dced265b9cfc"
+                "reference": "90a08f5deed5f7ac35463c161f2e8fa0e5652faf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/45026c8383187ad1dcb14fbfec77dced265b9cfc",
-                "reference": "45026c8383187ad1dcb14fbfec77dced265b9cfc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/90a08f5deed5f7ac35463c161f2e8fa0e5652faf",
+                "reference": "90a08f5deed5f7ac35463c161f2e8fa0e5652faf",
                 "shasum": ""
             },
             "require": {
@@ -695,7 +696,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-11-19 09:07:46"
+            "time": "2016-11-27 07:52:03"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -1212,16 +1213,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.0-RC1",
+            "version": "v3.2.0-RC2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "92e2f6deeda11ffaf001caa2e43f7fc13f0eee19"
+                "reference": "f2300ba8fbb002c028710b92e1906e7457410693"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/92e2f6deeda11ffaf001caa2e43f7fc13f0eee19",
-                "reference": "92e2f6deeda11ffaf001caa2e43f7fc13f0eee19",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f2300ba8fbb002c028710b92e1906e7457410693",
+                "reference": "f2300ba8fbb002c028710b92e1906e7457410693",
                 "shasum": ""
             },
             "require": {
@@ -1263,7 +1264,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-14 16:20:13"
+            "time": "2016-11-18 21:17:59"
         },
         {
             "name": "webmozart/assert",
@@ -1316,7 +1317,6 @@
             "time": "2016-11-23 20:04:58"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": [],

@@ -22,4 +22,10 @@ class EmptyResultTest extends TestCase
         $empty = new EmptyResult();
         $this->assertEquals([], $empty->__toArray());
     }
+
+    public function testCountShouldAlwayReturnZero()
+    {
+        $empty = new EmptyResult();
+        $this->assertEquals(0, $empty->count());
+    }
 }
